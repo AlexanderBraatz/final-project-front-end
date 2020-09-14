@@ -1,4 +1,16 @@
-.App {
+@import "./styles/_body.css";
+@import "./styles/_header.css";
+@import "./styles/_intro.css";
+@import "./styles/_list.css";
+@import "./styles/_footer.css";
+
+
+@import "./styles/_search.css";
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -14,7 +26,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: lightslategray;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +47,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

@@ -1,0 +1,19 @@
+.form-input{
+ 
+    float:left;
+    font-size: 1rem;
+
+
+
+}
+
+.form-button{
+   
+    
+    float:left;
+    border-left: none;
+    background: maroon;
+    font-size: 1rem;
+
+
+}

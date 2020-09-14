@@ -1,0 +1,6 @@
+.intro{
+    display: flexbox;
+    justify-content: center;
+    color: maroon;
+    text-align: center;
+}

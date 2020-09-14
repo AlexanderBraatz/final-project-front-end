@@ -1,0 +1,42 @@
+
+
+
+.navbar{
+    position: relative;
+    background-image: url( "https://lh3.googleusercontent.com/proxy/MWxOw5qiFQdpL2QNFgad0mwnh38PCjlwvngpzWHFCkSpdaUKtX68nddVoIhFMFEqW1ZN78orDfKx99BIXBegJ7cLBGd5S_zOYzDsJnpcwp3KaFXe0Ud_x27WR_T91Encvw7PZj3O54-VscDCFV4RcuRqfiwlarhAX3c_N8Yoy_gw" ) ;
+    opacity: 0.3;
+    
+    
+    
+    
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around
+}
+
+.navbar-header{
+   
+    margin: 1rem 1rem;
+    font-size: 5.5rem;
+    color: maroon;
+    font-weight: 900;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+}
+
+.nav-link{
+    
+
+    margin: 1rem 1rem;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style-type: none;
+    color: maroon;
+    border: 1px solid maroon;
+    border-radius: 50px;
+
+}
