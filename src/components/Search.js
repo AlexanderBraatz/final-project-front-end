@@ -1,18 +1,23 @@
-import React from 'react';
+import React,  { Component } from 'react';
 
 
-const Search = () => (
+class Search extends Component{
+
+  render(){
+    if (window.location.pathname === '/') return null;
     
-
+    return(
     <form action="/action_page.php">
       <input className="form-input" type="text" placeholder="Search.." name="search"/>
-      <button className="form-button" type="submit"><i class="fa fa-search"></i></button>
+      <button className="form-button" type="submit"><i className="fa fa-search"></i></button>
     </form>
+
+    );
    
 
+  }
 
-
-)
+}
 
 
 

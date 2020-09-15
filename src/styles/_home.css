@@ -1,0 +1,82 @@
+.body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 0;
+    padding: 0 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-size: 100%;
+
+
+}
+
+.body::before{
+  
+    content: "";
+    background-image: url("./assets/back.jpg") ;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    
+   
+  }
+
+
+
+
+
+.home-link{
+    text-decoration: yellow;
+    color: white;  /* Fallback: assume this color ON TOP of image */
+    background: url("./assets/Programming.jpg")  repeat;
+    -webkit-background-clip: text;
+    background-clip: text; 
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(253, 253, 4);
+   position: relative; 
+    
+    text-align: center;
+    font-size: 12rem;
+    font-weight: 900;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+    margin-top: 0;
+
+
+ 
+  }
+
+
+
+.home-link{
+   
+    animation: skew 3s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+}
+    
+    @keyframes skew {
+    0% {
+      transform: skew(20deg, 20deg);
+    }
+    100% {
+      transform: skew(-20deg, -20deg);
+    }
+
+}
+  
+
+  
+

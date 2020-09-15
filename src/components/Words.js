@@ -1,11 +1,20 @@
-import React, { Component } from 'react';
+import React  from 'react';
 
 
 const Words = ({ words }) => (
     words ? ( 
         <ul className="list">
             {words.map((value, index) => (
-            <a href="#"><li className="list-items" key={index}>{ value }</li><i class="heart fa fa-heart-o"></i></a>
+              
+                <div className="card list-items" key={ index }>
+                    <a className="list-items-nav"  href="/words">{ value }</a>
+                    <div className="container">
+                        <i className="heart fa fa-heart-o"></i>
+                    </div>
+                </div>
+                
+               
+             
             ))}
         </ul> ) : <p> 'No words to display! </p>
     );

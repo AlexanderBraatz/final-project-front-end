@@ -1,11 +1,25 @@
-@import "./styles/_body.css";
+@import "./styles/_reset.css";
+
+@import  "./styles/_nav.css";
 @import "./styles/_header.css";
 @import "./styles/_intro.css";
 @import "./styles/_list.css";
+
+@import "./styles/_home.css";
 @import "./styles/_footer.css";
 
-
 @import "./styles/_search.css";
+
+body{
+  
+ /* height: 100vh;
+
+ 
+  background-image: linear-gradient( rgb(166, 191, 199), white, lightblue) ; 
+  background-repeat: no-repeat; */
+  
+  
+}
 
 
 

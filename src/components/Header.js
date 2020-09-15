@@ -1,34 +1,29 @@
 import React, { Component } from 'react';
-import Nav from "./Nav"
-import Search from "./Search"
+import Nav from "./Nav";
 
-class Header extends Component {
-    render() {
-        const { children } =this.props;
-
-
-        return (
-            <header >
-                <nav class="navbar ">
+ class Header extends Component {
+    
+            render() {
+                  const { children } =this.props;
+      
+                  if (window.location.pathname === '/') return null;
+                 
+              return (
+              <>
+                 <header className="header">
                     
-                        <div class="navbar-header">
-                            <p >ARO</p>
-                        </div>
-                        <ul >
-                            <Nav />
-                        </ul>
+                    <h1 className="header-title">{children}</h1>
 
-                        <Search />
-                   
-                </nav>
-            </header>
+                    <Nav />
+                
+                </header>
+              </>
+              );
+      };
+          
+      
+      
+          }
 
-        );
-
-
-
-    }
-
-}
 
 export default Header
