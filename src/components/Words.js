@@ -6,10 +6,10 @@ const Words = ({ words }) => (
         <ul className="list">
             {words.map((value, index) => (
               
-                <div className="card list-items" key={ index }>
+                <div className="card list-items " key={ index }>
                     <a className="list-items-nav"  href="/words">{ value }</a>
-                    <div className="container">
-                        <i className="heart fa fa-heart-o"></i>
+                    <div className="card-container">
+                        <i className="heart fa fa-heart-o "></i>
                     </div>
                 </div>
                 

@@ -1,6 +1,6 @@
 .intro{
     display: flexbox;
     justify-content: center;
-    color: darkgrey;
+    color: darkslategrey;
     text-align: center;
 }

@@ -11,9 +11,16 @@
 @import "./styles/_search.css";
 
 body{
+  /* background-image: radial-gradient(circle, rgb(158, 153, 153), rgb(78, 69, 69),rgb(5, 5, 5), black) */
+  /* background-image: radial-gradient(circle, rgb(252, 250, 250), rgb(158, 150, 150), rgb(112, 106, 106), rgb(105, 102, 102),rgb(3, 3, 3), rgb(7, 6, 6)); */
+
+  /* background-image: linear-gradient(to bottom , rgb(7, 7, 6),rgb(31, 31, 29), rgb(17, 16, 16),rgb(250, 248, 248),rgb(255, 253, 253)); */
+
   
+  background-color:black;
  /* height: 100vh;
 
+ rgb(27, 26, 26)
  
   background-image: linear-gradient( rgb(166, 191, 199), white, lightblue) ; 
   background-repeat: no-repeat; */

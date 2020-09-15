@@ -8,9 +8,15 @@ class Home extends Component {
 
         return (
         <>
-        <body className="body">
-            <h1 className="home-header"><a className="home-link" href="/words">{children}</a></h1>
-        </body>   
+        <div className="body">
+            <a href="./words">
+            <div className="glitch" data-text="NERD WORDS"></div></a>
+            <div className="glow">NERD WORDS</div>
+            
+            
+            
+            
+        </div>   
         </>
 
             

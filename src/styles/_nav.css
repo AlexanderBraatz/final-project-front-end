@@ -1,8 +1,7 @@
 
 .nav-bar{
     display:flex;
-    align-self: right;
-    justify-self: right;
+   justify-content: center;
     flex-direction: row;
 }
 
@@ -16,8 +15,8 @@
    
     padding: 0.2rem 1rem;
     
-    font-family: 'Quattrocento', serif;
-    -webkit-text-stroke: 0.5px grey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke: 0.5px black;
    
     font-size: 1.2rem;
     font-style: normal;
@@ -35,7 +34,7 @@
 }
 
 .nav-link:hover {
-    color: red;
+    color: darksalmon;
     right: 0;
     text-decoration: none;
   }
@@ -47,7 +46,7 @@
   
   .nav-link:after {
     border-radius: 1em;
-    border-top: .1em solid red;
+    border-top: .1em solid darksalmon;
     content: "";
     position: absolute;
       right: 100%;
@@ -59,7 +58,7 @@
   
   .nav-link:hover:after {
     animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
-    border-color: rgb(248, 53, 4);
+    border-color: rgb(206, 151, 138);
   }
   
   @keyframes anchor-underline {

@@ -10,9 +10,11 @@ import Nav from "./Nav";
                  
               return (
               <>
-                 <header className="header">
+                 <header className="header glitch">
                     
-                    <h1 className="header-title">{children}</h1>
+                    {/* <h1 className="header-title" data-text={children}>{children}</h1> */}
+                    <div className="header-title " >
+                        {children}</div>
 
                     <Nav />
                 
