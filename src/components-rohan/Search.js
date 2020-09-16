@@ -7,7 +7,7 @@ class Search extends Component{
     if (window.location.pathname === '/') return null;
     
     return(
-    <form className="search" action="/action_page.php">
+    <form className="search" action="/">
       <input className="form-input" type="text" placeholder="Search.." name="search"/>
       <button className="form-button" type="submit"><i className="fa fa-search"></i></button>
     </form>

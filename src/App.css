@@ -1,9 +1,13 @@
 @import "./styles/_reset.css";
+@import "./styles/accessibility/_media-queries.css";
 
 @import  "./styles/_nav.css";
 @import "./styles/_header.css";
 @import "./styles/_intro.css";
+@import "./styles/_loading.css";
+@import "./styles/_fourohfour.css";
 @import "./styles/_list.css";
+
 
 @import "./styles/_home.css";
 @import "./styles/_footer.css";
@@ -11,61 +15,15 @@
 @import "./styles/_search.css";
 
 body{
-  /* background-image: radial-gradient(circle, rgb(158, 153, 153), rgb(78, 69, 69),rgb(5, 5, 5), black) */
-  /* background-image: radial-gradient(circle, rgb(252, 250, 250), rgb(158, 150, 150), rgb(112, 106, 106), rgb(105, 102, 102),rgb(3, 3, 3), rgb(7, 6, 6)); */
-
-  /* background-image: linear-gradient(to bottom , rgb(7, 7, 6),rgb(31, 31, 29), rgb(17, 16, 16),rgb(250, 248, 248),rgb(255, 253, 253)); */
-
-  
-  background-color:black;
- /* height: 100vh;
-
- rgb(27, 26, 26)
  
-  background-image: linear-gradient( rgb(166, 191, 199), white, lightblue) ; 
-  background-repeat: no-repeat; */
+
+  /* darker background */
+
+  /* background-image: linear-gradient(to bottom , rgb(26, 18, 20),rgb(83, 72, 72),rgb(7, 7, 6),rgb(7, 7, 6),rgb(7, 7, 6),rgb(7, 7, 6),rgb(7, 7, 6)); */
+
+  /* lighter background */
+
+  background-image: linear-gradient(to bottom , rgb(160, 155, 155),rgb(228, 224, 224),rgb(170, 170, 169),rgb(134, 134, 133), rgb(78, 78, 76) ,rgb(7, 7, 6));
+
   
-  
 }
-
-
-
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: lightslategray;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

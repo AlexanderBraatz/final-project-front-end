@@ -10,12 +10,11 @@ class Home extends Component {
         <>
         <div className="body">
             <a href="./words">
-            <div className="glitch" data-text="NERD WORDS"></div></a>
-            <div className="glow">NERD WORDS</div>
-            
-            
-            
-            
+            <div className="glitch " data-text="NERD WORDS"></div></a>
+            <div className="glow">{children}</div>
+                <p className="subtitle">Click to enter</p>
+        
+    
         </div>   
         </>
 

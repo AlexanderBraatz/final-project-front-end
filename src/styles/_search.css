@@ -11,7 +11,7 @@
  
     float:left;
     font-size: 1rem;
-    border: 2px solid rgb(194, 140, 140);
+    border: 2px solid  rgb(109, 80, 80);
     border-radius: 5%;
 
 }
@@ -20,7 +20,7 @@
    
     float:left;
     border-left: none;
-    border-color: rgb(194, 140, 140);
+    border-color: rgb(109, 80, 80);
     background: rgb(194, 140, 140);
     width: 1.5rem;
     height:1.8rem;

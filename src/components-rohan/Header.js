@@ -10,6 +10,7 @@ import Nav from "./Nav";
                  
               return (
               <>
+                <div className="container">
                  <header className="header glitch">
                     
                     {/* <h1 className="header-title" data-text={children}>{children}</h1> */}
@@ -19,6 +20,7 @@ import Nav from "./Nav";
                     <Nav />
                 
                 </header>
+                </div>
               </>
               );
       };

@@ -1,0 +1,22 @@
+.progress-border{
+    border: 1px solid rgb(12, 9, 9);
+    border-radius: 30%;
+    background-color: rgb(219, 166, 166);
+    height: 2rem;
+    width: 24rem;
+    display:flex;
+    justify-content:center;
+    align-content: center;
+   
+}
+
+.progress{
+    display:flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, rgb(65, 25, 25), rgb(219, 166, 166),rgb(65, 25, 25), rgb(219, 166, 166),rgb(65, 25, 25), rgb(219, 166, 166)); 
+    height: 2rem;
+    width: 24rem;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
