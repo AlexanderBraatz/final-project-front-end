@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
-}
+@import "./styles/_reset.css";
+@import "./styles/accessibility/_media-queries.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import  "./styles/_nav.css";
+@import "./styles/_header.css";
+@import "./styles/_intro.css";
+@import "./styles/_loading.css";
+@import "./styles/_fourohfour.css";
+@import "./styles/_list.css";
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@import "./styles/_home.css";
+@import "./styles/_footer.css";
 
-.App-link {
-  color: #61dafb;
-}
+@import "./styles/_search.css";
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+ 
+
+  /* darker background */
+
+  /* background-image: linear-gradient(to bottom , rgb(26, 18, 20),rgb(83, 72, 72),rgb(7, 7, 6),rgb(7, 7, 6),rgb(7, 7, 6),rgb(7, 7, 6),rgb(7, 7, 6)); */
+
+  /* lighter background */
+
+  background-image: linear-gradient(to bottom , rgb(160, 155, 155),rgb(228, 224, 224),rgb(170, 170, 169),rgb(134, 134, 133), rgb(78, 78, 76) ,rgb(7, 7, 6));
+
+  
 }

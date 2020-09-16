@@ -1,0 +1,30 @@
+.search{
+    display:flex;
+    padding: 1.5rem 0.5rem;
+    height: 2rem;
+    
+
+}
+
+
+.form-input{
+ 
+    float:left;
+    font-size: 1rem;
+    border: 2px solid  rgb(109, 80, 80);
+    border-radius: 5%;
+
+}
+
+.form-button{
+   
+    float:left;
+    border-left: none;
+    border-color: rgb(109, 80, 80);
+    background: rgb(194, 140, 140);
+    width: 1.5rem;
+    height:1.8rem;
+    
+
+
+}
