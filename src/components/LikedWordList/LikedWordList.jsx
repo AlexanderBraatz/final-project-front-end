@@ -3,10 +3,7 @@ import Table from 'react-bootstrap/Table'
 
 
 class LikedWordList extends Component{
-  constructor({likedWordList}){
-    super({likedWordList});
 
-  }
 
   render(){
       let {likedWordList} = this.props

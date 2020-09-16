@@ -1,11 +1,6 @@
 
-export const like = (wordId, context) =>{
-    return({type: "LIKE", id : wordId, context})
-};
-
 
 export const setWordCard = (wordCard) => {
-    //history.push("/words/term.id")
     return {
         type:"SET_TERM",
         wordCard,
@@ -33,7 +28,7 @@ export const resetLoading = (stateKey) => {
     }
 };
 
-export const UpdateLike = (id, isItLiked) => {
+export const updateLike = (id, isItLiked) => {
     return {
         type: "UPDATE_LIKE",
         id,

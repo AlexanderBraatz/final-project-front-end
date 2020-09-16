@@ -2,7 +2,7 @@ import axios from "../../axios";
 import { setWordList } from "./state";
 import { setLikedWordList } from "./state";
 import { setWordCard } from "./state";
-import { UpdateLike } from "./state";
+import { updateLike } from "./state";
 import { resetLoading } from "./state";
 import history from "../../history";
 
@@ -60,9 +60,8 @@ export const sendSearch = (value) => {
 export const changeLike = (id, liked ) => {
     const isItLiked = !liked;
     return (dispatch) => {
-        axios.patch(`/words/${id}`,{ "liked": isItLiked }).then(({ data }) => {
-            dispatch(UpdateLike(id, isItLiked));
-        });
+        dispatch(updateLike(id, isItLiked));
+        axios.patch(`/words/${id}`,{ "liked": isItLiked });
     };
 };
 

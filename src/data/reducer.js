@@ -4,7 +4,7 @@ const reducer = (state, action) => {
     case "SET_WL" : return setWLReducer(state, action)
     case "SET_LWL" : return setLWLReducer(state,action)
     case "RESET_LOADING" : return resetLoadingReducer(state, action)
-    // case "UPDATE_LIKE" : return updateLikeReducer(state, action);
+    case "UPDATE_LIKE" : return updateLikeReducer(state, action);
     default: return state;
   }
 }
@@ -43,20 +43,18 @@ const resetLoadingReducer = (state, {stateKey}) => {
   });
 }
 
-// const updateLikeReducer =(state, { id, isItLiked}) => {
-//   const {likedWordList} = state;
-//   const updatedWL =  likedWordList.map((term)=>{
-//     if(term.id === id){}
-//   })
-//   return({
-//     ...state,
-//     likedWordList : updatedWL
-//     // [...wordlist,logic to like the word in all places(or only in context) in state for responsive design ]
-//   })
-// }
+const updateLikeReducer =(state, { id, isItLiked}) => {
+  const {wordCard, wordList, likedWordList} = state;
 
+  const updatedWL =  wordList.map((term)=>((term.id === id) ? {...term, liked : isItLiked } : term));
+  const updatedLWL =  likedWordList.map((term)=>((term.id === id) ? {...term, liked : isItLiked } : term));
 
-
-
-
+  const updatedWC = (wordCard.id === id) ? {...wordCard, liked : isItLiked} : wordCard
+  return({
+    ...state,
+    wordList : updatedWL,
+    likedWordList : updatedLWL,
+    wordCard : updatedWC,
+  })
+}
 export default reducer ;
