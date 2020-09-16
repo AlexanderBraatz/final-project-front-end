@@ -10,7 +10,7 @@ import LoadingWC from "../Loading/LoadingWC";
 import LoadingWL from "../Loading/LoadingWL";
 import LoadingLWL from "../Loading/LoadingLWL";
 
-import history from "../history";
+import history from "../../history";
 
 const App = (props) => (
     <React.Fragment>

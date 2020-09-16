@@ -25,3 +25,18 @@ export const setLikedWordList = (likedWordList) => {
         likedWordList,
     }
 };
+
+export const resetLoading = (stateKey) => {
+    return {
+        type: "UPDATE_LIKE",
+        stateKey,
+    }
+};
+
+export const UpdateLike = (id, isItLiked) => {
+    return {
+        type: "UPDATE_LIKE",
+        id,
+        isItLiked,
+    }
+};

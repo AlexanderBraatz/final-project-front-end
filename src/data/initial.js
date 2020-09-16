@@ -21,13 +21,13 @@ const initial = {
       "id": "1",
       "word": "lah",
       "definition": "lah lah",
-      "liked": 1
+      "liked": true
     },
     {
         "id": "2",
         "word": "rah",
         "definition": "rah rah",
-        "liked": 1
+        "liked": false
     }
   ],
   wordCard :{

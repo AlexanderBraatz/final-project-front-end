@@ -2,6 +2,8 @@ import axios from "../../axios";
 import { setWordList } from "./state";
 import { setLikedWordList } from "./state";
 import { setWordCard } from "./state";
+import { UpdateLike } from "./state";
+import { resetLoading } from "./state";
 import history from "../../history";
 
 
@@ -9,44 +11,40 @@ import history from "../../history";
 
 //gtting Data from the API
 
-export const getData = (componentName, id) => {
-    // console.log("ran actionCreator");
-    if(componentName === "WordList"){ getWordList() } 
-    if(componentName === "WordCard"){ getWordCard( id ) }
-    if(componentName === "LikedWordList"){ getLikedWordList() }
-    
-};
 
-const getWordCard = (id) => {
+export const getWordCard = (id) => {
+    resetLoading("wordCard");
     return (dispatch) => {
+        dispatch(setWordCard(testWordCard()));// <--only for testing befor the API is deployed
         axios.get(`/words/${id}`).then(({ data }) => {
-            // dispatch(setWordCard(data.data));
-            dispatch(setWordCard(testWordCard()));
+            dispatch(setWordCard(data.data));
         });
     };
 };
 
 
-const getWordList = () => {
+export const getWordList = () => {
+    resetLoading("wordList");
     return (dispatch) => {
+        dispatch(setWordList(testWordList()));// <--only for testing befor the API is deployed
         axios.get("/words").then(({ data }) => {
-            // dispatch(setWordList(data.data));
-            dispatch(setWordList(testWordList()));
+            dispatch(setWordList(data.data));
         });
     };
 };
 
 
-const getLikedWordList = () => {
+export const getLikedWordList = () => {
+    resetLoading("likedWordList");
     return (dispatch) => {
+        dispatch(setLikedWordList(testLikedWordList()));// <--only for testing befor the API is deployed
         axios.get("/words/liked").then(({ data }) => {
-            // dispatch(setLikedWordList(data.data));
-            dispatch(setLikedWordList(testWordList()));
+            dispatch(setLikedWordList(data.data));
         });
     };
 };
-    
 
+// sending DAta to the API
 
 export const sendSearch = (value) => {
     // console.log("ran actionCreator");
@@ -59,6 +57,14 @@ export const sendSearch = (value) => {
     };
 };
 
+export const changeLike = (id, liked ) => {
+    const isItLiked = !liked;
+    return (dispatch) => {
+        axios.patch(`/words/${id}`,{ "liked": isItLiked }).then(({ data }) => {
+            dispatch(UpdateLike(id, isItLiked));
+        });
+    };
+};
 
 
 
