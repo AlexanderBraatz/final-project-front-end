@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "word": "lah",
+            "definition": "lah lah",
+            "liked": 1
+        },
+        {
+            "id": 2,
+            "word": "rah",
+            "definition": "rah rah",
+            "liked": 1
+        }
+    ]
+}
