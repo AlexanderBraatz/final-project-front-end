@@ -3,9 +3,8 @@ import React, { Component } from "react";
 class Loading extends Component {
 
     componentDidMount() {
-        if (!this.props.loaded) {
-            this.props.handleLoad();
-        }
+        const { loaded, handleLoad, id }= this.props
+        loaded ? null : handleLoad( id );
     }
     render() {
         const { children, loaded } = this.props;

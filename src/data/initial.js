@@ -30,7 +30,7 @@ const initial = {
         "liked": 1
     }
   ],
-  term :{
+  wordCard :{
     "id": 9,
     "word": "aa",
     "definition": "ha ha",
@@ -50,7 +50,9 @@ const initial = {
       }
     ]
   },
-  loaded: false,
+  loadedWordCard: false,
+  loadedWordList: false,
+  loadedLikedWordList: false,
 };
 
 export default initial;

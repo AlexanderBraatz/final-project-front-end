@@ -4,16 +4,24 @@ export const like = (wordId, context) =>{
 };
 
 
-export const loadedWordList = (wordList) => {
-    return {
-        type: "UPDATE_WL",
-        wordList,
-    }
-};
-export const saveTerm = (term) => {
+export const setWordCard = (wordCard) => {
     //history.push("/words/term.id")
     return {
         type:"SET_TERM",
-        term,
+        wordCard,
     }
-} 
+}
+
+export const setWordList = (wordList) => {
+    return {
+        type: "SET_WL",
+        wordList,
+    }
+};
+
+export const setLikedWordList = (likedWordList) => {
+    return {
+        type: "SET_LWL",
+        likedWordList,
+    }
+};

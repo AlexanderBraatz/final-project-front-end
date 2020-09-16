@@ -5,12 +5,12 @@ import { getWordList } from "../../data/actions/api";
 
 
 
-const mapStateToProps = ({ loaded }) => ({
-    loaded,
+const mapStateToProps = ({ loadedWordList }) => ({
+    loaded : loadedWordList,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    handleLoad: () => () => dispatch(getWordList()),
+    handleLoad: () => dispatch(getWordList()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Loading);

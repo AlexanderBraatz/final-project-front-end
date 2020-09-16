@@ -1,8 +1,8 @@
 import React from "react";
 import Card from 'react-bootstrap/Card'
 
-const WordCard = ({term, description, links, liked }) => {
-    console.log(term, description, links, liked,);
+const WordCard = (id, word, definition, liked, links) => {
+    console.log(id, word, definition, liked, links);
     return(
         <Card style={{ width: '18rem' }}>
   <Card.Body>

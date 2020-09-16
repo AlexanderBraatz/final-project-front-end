@@ -1,35 +1,43 @@
 import React from "react"; 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {  Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "../Navbar";
 import LikedWordList from "../LikedWordList";
 // import SearchBar from "../SearchBar";
 import WordCard from "../WordCard";
 import WordList from "../WordList";
-import Loading from "../Loading";
+import LoadingWC from "../Loading/LoadingWC";
+import LoadingWL from "../Loading/LoadingWL";
+import LoadingLWL from "../Loading/LoadingLWL";
 
+import history from "../history";
 
 const App = (props) => (
     <React.Fragment>
-      <Router>
+      <Router  history={ history }>
         <Navbar />
           <Switch>
             <Route exact path="/words">
-              <Loading>
+              <LoadingWL >
                 <WordList />
                 <WordCard />
-              </Loading>
+              </LoadingWL>
             </Route>
             
-            {/* <Route 
+            <Route 
               exact path="/words/:id"
-              render={ ( { match }) => (<WordCard id = { match.params.id }/>)}> 
-            </Route> */}
+              render={ ( { match }) => (
+                <LoadingWC 
+                  id = { match.params.id }>
+                  <WordCard />
+                </LoadingWC>
+              )}> 
+            </Route>
 
             <Route path="/liked">
-              <Loading>
+              <LoadingLWL >
                 <LikedWordList />
-              </Loading>
+              </LoadingLWL>
             </Route>
 
             {/* <FourOhFour/> */}

@@ -1,14 +1,38 @@
 
 const reducer = (state, action) => { 
   switch(action.type){
+    case "SET_TERM" : return setWReducer(state, action)
+    case "SET_WL" : return setWLReducer(state, action)
+    case "SET_LWL" : return setLWLReducer(state,action)
     case "LIKE" : return likeOneWordReducer(state, action);
-    case "SET_TERM" : return setTermReducer(state, action)
-    case "UPDATE_WL" : return loadedWLReducer(state,action)
     default: return state;
   }
 }
 
 //reducer business logic
+
+const setWReducer = (state,{ wordCard }) => {
+
+  return ({
+    ...state,
+    wordCard,
+    loadedWord : true,
+
+  })
+}
+
+const loadedWLReducer = (state, {wordList}) => ({
+  ...state,
+  wordList,
+  loadedWordList: true,
+});
+
+const likeOneWordReducer = (state, {likedWordList}) => ({
+  ...state,
+  likedWordList,
+  loadedLikedWordList: true,
+});
+
 
 const likeOneWordReducer =(state, { id, context }) => {
   return({
@@ -18,18 +42,5 @@ const likeOneWordReducer =(state, { id, context }) => {
 }
 
 
-const loadedWLReducer = (state, {wordList}) => ({
-  ...state,
-  wordList,
-});
-
-
-const setTermReducer = (state,{ term }) => {
-
-  return ({
-    ...state,
-    term,
-  })
-}
 
 export default reducer ;
