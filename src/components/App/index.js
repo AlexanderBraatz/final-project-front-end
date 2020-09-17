@@ -4,8 +4,8 @@ import {  Router, Route, Switch } from "react-router-dom";
 
 import LikedWordList from "../LikedWordList";
 // import SearchBar from "../SearchBar";
-import WordCard from "../WordCard";
-import WordList from "../WordList";
+import WordCard from "../WordCard/WordCard";
+import WordList from "../WordList/WordList";
 import LoadingWC from "../Loading/LoadingWC";
 import LoadingWL from "../Loading/LoadingWL";
 import LoadingLWL from "../Loading/LoadingLWL";
@@ -20,7 +20,7 @@ import Intro from "../../components/Intro";
 import FourOhFour from "../../components/FourOhFour";
 import Footer from "../../components/Footer";
 
-import Form from "../../components/Form";
+// import Form from "../../components/Form";
 
 import '../../App.css';
 
@@ -35,9 +35,9 @@ const App = (props) => (
              <Home />
             </Route>
 
-            <Route exact path="/form">
+            {/* <Route exact path="/form">
              <Form />
-            </Route>
+            </Route> */}
 
             <Route exact path="/words/:id"
               render={ ( { match }) => (
