@@ -1,43 +1,37 @@
 import React, { Component } from "react";
-import Table from 'react-bootstrap/Table'
+
 
 
 class LikedWordList extends Component{
 
-
+// like WordList but with deffinitions with Heart beeing used
   render(){
       let {likedWordList} = this.props
       console.log(likedWordList);
       return(
-  <Table striped bordered hover size="sm">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td colSpan="2">Larry the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-  </Table>
+        <>
+        <p></p>
+        // <Heart id={ term.id } liked={ term.liked } />
+        
+        <h2 className="word-heading">Liked Words</h2>
+    
+        <ul className="list">
+            <div className="card list-items " >
+                <Link 
+                to={ '/words/${ term.id }' } 
+                key={ term.id } 
+                className="list-items-nav"  
+                >
+                    { term.word}
+                </Link>
+    
+                <p className='intro'>{ term.description }</p>
+    
+                <Heart id={ term.id } like={ term.liked} />
+            </div> 
+        </ul> 
+    
+        </>
       )
   }
 }

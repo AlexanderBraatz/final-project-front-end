@@ -1,6 +1,6 @@
 const reducer = (state, action) => { 
   switch(action.type){
-    case "SET_TERM" : return setWReducer(state, action)
+    case "SET_WC" : return setWReducer(state, action)
     case "SET_WL" : return setWLReducer(state, action)
     case "SET_LWL" : return setLWLReducer(state,action)
     case "RESET_LOADING" : return resetLoadingReducer(state, action)
@@ -16,7 +16,7 @@ const setWReducer = (state,{ wordCard }) => {
   return ({
     ...state,
     wordCard,
-    loadedWord : true,
+    loadedWordCard : true,
 
   })
 }

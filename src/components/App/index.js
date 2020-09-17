@@ -1,7 +1,7 @@
 import React from "react"; 
 import {  Router, Route, Switch } from "react-router-dom";
 
-import Navbar from "../Navbar";
+
 import LikedWordList from "../LikedWordList";
 // import SearchBar from "../SearchBar";
 import WordCard from "../WordCard";
@@ -13,68 +13,57 @@ import LoadingLWL from "../Loading/LoadingLWL";
 import history from "../../history";
 
 
-import Header from "./components-rohan/Header";
-import Home from "./components-rohan/Home";
+import Header from "../../components/Header/Header";
+import Home from "../../components/Home";
 
-import Intro from "./components-rohan/Intro";
-// import FourOhFour from "./components/FourOhFour";
-// import Loading from "./components/Loading";
-import WordsTest from "./components-rohan/WordsTest";
-// import Words from "./components/Words";
-// import Word from "./components/Word";
-import Footer from "./components-rohan/Footer";
+import Intro from "../../components/Intro";
+import FourOhFour from "../../components/FourOhFour";import Footer from "../../components/Footer";
 
-import './App.css';
+import '../../App.css';
 
 
 const App = (props) => (
     <React.Fragment>
       <Router  history={ history }>
       <Header > NERD WORDS </Header>
-
-        <Navbar />
+        {/* <Navbar /> */}
           <Switch>
-            <Route exact path="/words">
-              <LoadingWL >
-                <WordList />
-                <WordCard />
-              </LoadingWL>
-              <Intro />
-              
-              {/* <Loading /> */}
-              <WordsTest words={ ["Attribute", "Boolean", " Child", "DOM", "Element", "Favicon", "GIF", "HTML", "Inheritance", "JPEG", "LAMP", "Markup", "Nesting", "Parent", "Script", "Text Editor"] }/>
-              {/* <Words /> */}
-
-
+            <Route exact path="/">
+             <Home />
             </Route>
-            
-            <Route 
-              exact path="/words/:id"
+
+            <Route exact path="/words/:id"
               render={ ( { match }) => (
                 <LoadingWC 
                   id = { match.params.id }>
                   <WordCard />
-
-                
-                {/* <Route exact path="/words/:id" render={ ({match}) => (
-                <Word id={ match.params.id }/>
-              )} /> */}
                 </LoadingWC>
               )}> 
             </Route>
+
+
+            <Route exact path="/words">
+              <LoadingWL >
+                <Intro />
+                <WordList />
+              </LoadingWL>
+            </Route>
+            
+
 
             <Route path="/liked">
               <LoadingLWL >
                 <LikedWordList />
               </LoadingLWL>
             </Route>
-              {/* <FourOhFour /> */}
-            {/* <FourOhFour/> */}
+
+            <FourOhFour />
           </Switch>
           <Footer />
-          {/* <Footer /> */}
       </Router>
     </React.Fragment>
 );
 
 export default App;
+
+
