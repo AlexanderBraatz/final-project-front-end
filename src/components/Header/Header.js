@@ -6,7 +6,7 @@ import Nav from "./Nav";
             render() {
                   const { children } =this.props;
       
-                  if (window.location.pathname === '/') return null;
+                  if (this.props.history.location.pathname=== '/') return null;
                  
               return (
               <>
