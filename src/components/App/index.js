@@ -4,8 +4,8 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import LikedWordList from "../LikedWordList";
 // import SearchBar from "../SearchBar";
-import WordCard from "../WordCard/WordCard";
-import WordList from "../WordList/WordList";
+import WordCard from "../WordCard";
+import WordList from "../WordList";
 import LoadingWC from "../Loading/LoadingWC";
 import LoadingWL from "../Loading/LoadingWL";
 import LoadingLWL from "../Loading/LoadingLWL";
