@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 
 class Home extends Component {
@@ -9,8 +10,8 @@ class Home extends Component {
         return (
         <>
         <div className="body">
-            <a href="./words">
-            <div className="glitch " data-text="NERD WORDS"></div></a>
+            <Link to="/words">
+            <div className="glitch " data-text="NERD WORDS"></div></Link>
             <div className="glow">{children}</div>
                 <p className="subtitle">Click to enter</p>
         
