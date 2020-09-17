@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/final-project-front-end/static/css/main.ebf8224d.chunk.css",
+    "main.js": "/final-project-front-end/static/js/main.72eacaee.chunk.js",
+    "main.js.map": "/final-project-front-end/static/js/main.72eacaee.chunk.js.map",
+    "runtime-main.js": "/final-project-front-end/static/js/runtime-main.346ac0dc.js",
+    "runtime-main.js.map": "/final-project-front-end/static/js/runtime-main.346ac0dc.js.map",
+    "static/js/2.e2785707.chunk.js": "/final-project-front-end/static/js/2.e2785707.chunk.js",
+    "static/js/2.e2785707.chunk.js.map": "/final-project-front-end/static/js/2.e2785707.chunk.js.map",
+    "index.html": "/final-project-front-end/index.html",
+    "precache-manifest.b5fc1edc83c343936f87daa7340314bb.js": "/final-project-front-end/precache-manifest.b5fc1edc83c343936f87daa7340314bb.js",
+    "service-worker.js": "/final-project-front-end/service-worker.js",
+    "static/css/main.ebf8224d.chunk.css.map": "/final-project-front-end/static/css/main.ebf8224d.chunk.css.map",
+    "static/js/2.e2785707.chunk.js.LICENSE.txt": "/final-project-front-end/static/js/2.e2785707.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/final-project-front-end/static/media/purplecode.a2905bc7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.346ac0dc.js",
+    "static/js/2.e2785707.chunk.js",
+    "static/css/main.ebf8224d.chunk.css",
+    "static/js/main.72eacaee.chunk.js"
+  ]
+}
