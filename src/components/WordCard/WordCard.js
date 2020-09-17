@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from'../axios';
+// import axios from'../axios';
 import Heart from'../Heart';
 import WordLinks from './WordLinks';
 
