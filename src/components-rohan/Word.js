@@ -28,7 +28,7 @@ class Word extends Component{
 
         return !loaded ? <Loading /> : (
         <>
-        <h1>{ word }</h1>
+        <h2>{ word }</h2>
         <article>
             <h2>{word.word}</h2>
             <p>{word.definition}</p>

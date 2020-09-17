@@ -35,7 +35,7 @@ class Words extends Component {
               
                 <div className="card list-items "  >
                     <Link 
-                    to={ '/words/${ word.id }' } key={ words.id } className="list-items-nav"  href="/words">
+                    to={ '/words/${ word.id }' } key={ words.id } className="list-items-nav" >
                         { words.word}
                     </Link>
                     <Heart />
