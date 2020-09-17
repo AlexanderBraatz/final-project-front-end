@@ -22,7 +22,7 @@ class Heart extends Component{
                 onClick={this.handleClick}
                 style = {{ 
                     fontSize: 22, 
-                    color: this.props.liked ? "white" : "black",
+                    color: this.props.liked ? "red" : "white",
                 }}
                 ></i>
              </div>
