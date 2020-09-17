@@ -20,6 +20,8 @@ import Intro from "../../components/Intro";
 import FourOhFour from "../../components/FourOhFour";
 import Footer from "../../components/Footer";
 
+import Form from "../../components/Form";
+
 import '../../App.css';
 
 
@@ -31,6 +33,10 @@ const App = (props) => (
           <Switch>
             <Route exact path="/">
              <Home />
+            </Route>
+
+            <Route exact path="/form">
+             <Form />
             </Route>
 
             <Route exact path="/words/:id"
