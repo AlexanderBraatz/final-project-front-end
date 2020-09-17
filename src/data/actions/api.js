@@ -15,7 +15,7 @@ import history from "../../history";
 export const getWordCard = (id) => {
     resetLoading("wordCard");
     return (dispatch) => {
-        dispatch(setWordCard(testWordCard()));// <--only for testing befor the API is deployed
+        //dispatch(setWordCard(testWordCard()));// <--only for testing befor the API is deployed
         axios.get(`/words/${id}`).then(({ data }) => {
             dispatch(setWordCard(data.data));
         });
@@ -26,7 +26,7 @@ export const getWordCard = (id) => {
 export const getWordList = () => {
     resetLoading("wordList");
     return (dispatch) => {
-        dispatch(setWordList(testWordList()));// <--only for testing befor the API is deployed
+       // dispatch(setWordList(testWordList()));// <--only for testing befor the API is deployed
         axios.get("/words").then(({ data }) => {
             dispatch(setWordList(data.data));
         });
@@ -37,7 +37,7 @@ export const getWordList = () => {
 export const getLikedWordList = () => {
     resetLoading("likedWordList");
     return (dispatch) => {
-        dispatch(setLikedWordList(testLikedWordList()));// <--only for testing befor the API is deployed
+       // dispatch(setLikedWordList(testLikedWordList()));// <--only for testing befor the API is deployed
         axios.get("/words/liked").then(({ data }) => {
             dispatch(setLikedWordList(data.data));
         });
@@ -69,50 +69,50 @@ export const changeLike = (id, liked ) => {
 
 
 
-const testWordList = () => ([
-    {
-        "id":1,
-        "word":"TEST TEST TEST",
-        "liked":false
-    },
-    {
-        "id":2,
-        "word":"Front end",
-        "liked":false
-    },
-    {
-        "id":3,
-        "word":"Back end",
-        "liked":false
-    }
-]);
+// const testWordList = () => ([
+//     {
+//         "id":1,
+//         "word":"TEST TEST TEST",
+//         "liked":false
+//     },
+//     {
+//         "id":2,
+//         "word":"Front end",
+//         "liked":false
+//     },
+//     {
+//         "id":3,
+//         "word":"Back end",
+//         "liked":false
+//     }
+// ]);
 
-const testLikedWordList = () => ( [
-    {
-        "id": 1,
-        "word": "Test",
-        "definition": "lah lah",
-        "liked": true
-    }
-]);
+// const testLikedWordList = () => ( [
+//     {
+//         "id": 1,
+//         "word": "Test",
+//         "definition": "lah lah",
+//         "liked": true
+//     }
+// ]);
 
-const testWordCard = () => ( {
-    "id": 9,
-    "word": "aa",
-    "definition": "ha ha",
-    "liked": false,
-    "links": [
-        {
-            "id": 6,
-            "link": "www.funny.com"
-        },
-        {
-            "id": 12,
-            "link": "www.beans.com"
-        },
-        {
-            "id": 13,
-            "link": "www.beans.com"
-        }
-    ]
-});
+// const testWordCard = () => ( {
+//     "id": 9,
+//     "word": "aa",
+//     "definition": "ha ha",
+//     "liked": false,
+//     "links": [
+//         {
+//             "id": 6,
+//             "link": "www.funny.com"
+//         },
+//         {
+//             "id": 12,
+//             "link": "www.beans.com"
+//         },
+//         {
+//             "id": 13,
+//             "link": "www.beans.com"
+//         }
+//     ]
+// });
