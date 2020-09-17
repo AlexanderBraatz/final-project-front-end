@@ -1,5 +1,5 @@
 import React from "react"; 
-import {  Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 
 import LikedWordList from "../LikedWordList";
