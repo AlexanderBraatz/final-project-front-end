@@ -1,17 +1,15 @@
 import React, { Component } from "react";
-
+//use like 
 class Heart extends Component{
     constructor(props){
         super(props);
-        this.state = { colour : "black", };
-
+    
         this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick(){
-        const newColour = this.state.colour === "black"  ? "white" : "black";
-        
-        this.setState( {colour : newColour, });
+        let {id, liked, sendTheLike} = this.props;
+        sendTheLike(id, liked);
     }
 
 
@@ -24,8 +22,7 @@ class Heart extends Component{
                 onClick={this.handleClick}
                 style = {{ 
                     fontSize: 22, 
-                    color: this.state.colour,
-                   
+                    color: this.props.isItLiked ? "white" : "black",
                 }}
                 ></i>
              </div>

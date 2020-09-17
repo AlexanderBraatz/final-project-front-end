@@ -32,7 +32,7 @@ const initial = {
   ],
   wordCard :{
     "id": 9,
-    "word": "aa",
+    "word": "Api",
     "definition": "ha ha",
     "liked": false,
     "links": [

@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import Settings from "./Settings";
 import {sendSearch} from "../../data/actions/api"
+import  SearchBar  from "./SearchBar"
 
 const mapStateToProps = ({value}) => ({value});
 
@@ -12,4 +12,4 @@ const mapDispatchToProps = (dispatch) =>{
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Settings);
+export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);

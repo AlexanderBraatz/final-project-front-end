@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Heart from "./Heart";
+// import Heart from "./Heart";
 
 
 const Words = ({ words }) => (
@@ -17,5 +17,8 @@ const Words = ({ words }) => (
         </ul> ) : <p> 'No words to display! </p>
 );
 
+              {/* <Loading /> */}
+              {/* <WordsTest words={ ["Attribute", "Boolean", " Child", "DOM", "Element", "Favicon", "GIF", "HTML", "Inheritance", "JPEG", "LAMP", "Markup", "Nesting", "Parent", "Script", "Text Editor"] }/> */}
+              {/* <Words /> */}
 
 export default Words

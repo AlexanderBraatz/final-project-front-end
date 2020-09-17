@@ -1,8 +1,6 @@
-
-
 export const setWordCard = (wordCard) => {
     return {
-        type:"SET_TERM",
+        type:"SET_WC",
         wordCard,
     }
 }
