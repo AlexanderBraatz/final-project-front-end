@@ -5,7 +5,7 @@ const WordLinks = ({  links }) => (
     
     <span >
         {links.map(link => (
-            <a key={ link.id } >{ link }</a>
+            <a href="/" key={ link.id } >{ link }</a>
         ))}
     </span>
 );

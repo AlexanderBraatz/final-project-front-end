@@ -16,7 +16,7 @@ const Liked =( likedWordList ) => {
           { likedWordList.map( term => (
               <div className="card list-items " >
                   <Link 
-                  to={ '/words/${ term.id }' } 
+                  to={ `/words/${ term.id }` } 
                   key={ term.id } 
                   className="list-items-nav"  
                   >

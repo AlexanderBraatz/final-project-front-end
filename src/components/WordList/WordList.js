@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Heart from "../Heart";
 
 
+  
+
 const WordList = ({ wordList }) => {
     return(
         <ul className="list">

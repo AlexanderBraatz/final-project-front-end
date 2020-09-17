@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Heart from "../Heart";
 
@@ -16,7 +16,7 @@ const LikedWordList =( likedWordList ) => {
           { likedWordList.map( term => (
               <div className="card list-items " >
                   <Link 
-                  to={ '/words/${ term.id }' } 
+                  to={ `/words/${ term.id }` } 
                   key={ term.id } 
                   className="list-items-nav"  
                   >
