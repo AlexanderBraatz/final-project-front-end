@@ -4,4 +4,5 @@
     font-size: 4rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
+    -webkit-text-stroke: 1px rgb(3, 3, 3);
 }

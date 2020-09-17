@@ -28,7 +28,7 @@ import '../../App.css';
 const App = (props) => (
     <React.Fragment>
       <Router  history={ history }>
-      <Header > NERD WORDS </Header>
+      {/* <Header > NERD WORDS </Header> */}
         {/* <Navbar /> */}
           <Switch>
             <Route exact path="/">
@@ -43,7 +43,9 @@ const App = (props) => (
               render={ ( { match }) => (
                 <LoadingWC 
                   id = { match.params.id }>
+                    <Header > NERD WORDS </Header>
                   <WordCard />
+                  <Footer />
                 </LoadingWC>
               )}> 
             </Route>
@@ -51,8 +53,10 @@ const App = (props) => (
 
             <Route exact path="/words">
               <LoadingWL >
+              <Header > NERD WORDS </Header>
                 <Intro />
                 <WordList />
+                <Footer />
               </LoadingWL>
             </Route>
             
@@ -60,13 +64,15 @@ const App = (props) => (
 
             <Route path="/liked">
               <LoadingLWL >
+              <Header > NERD WORDS </Header>
                 <LikedWordList />
+                <Footer />
               </LoadingLWL>
             </Route>
 
             <FourOhFour />
           </Switch>
-          <Footer />
+          {/* <Footer /> */}
       </Router>
     </React.Fragment>
 );
