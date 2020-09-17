@@ -1,7 +1,7 @@
 import React  from 'react';
 
 
-const Link = ({  links }) => (
+const WordLinks = ({  links }) => (
     
     <span >
         {links.map(link => (
@@ -11,4 +11,4 @@ const Link = ({  links }) => (
 );
 
         
-export default Link;
+export default WordLinks;

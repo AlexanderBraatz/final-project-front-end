@@ -17,7 +17,8 @@ import Header from "../../components/Header/Header";
 import Home from "../../components/Home";
 
 import Intro from "../../components/Intro";
-import FourOhFour from "../../components/FourOhFour";import Footer from "../../components/Footer";
+import FourOhFour from "../../components/FourOhFour";
+import Footer from "../../components/Footer";
 
 import '../../App.css';
 
