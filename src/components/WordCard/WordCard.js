@@ -5,7 +5,7 @@ import WordLinks from './WordLinks';
 
 
 
-const WordCard = (id, word, definition, liked, links) =>  { 
+const WordCard = ({id, word, definition, liked, links}) =>  { 
     return(
         <>
         <h2 className='word-heading'>{ word }</h2>
@@ -13,7 +13,7 @@ const WordCard = (id, word, definition, liked, links) =>  {
         <article>
             <p className= "intro"> {definition} </p>
 
-            <WordLinks />
+            <WordLinks links={links} />
 
             <Heart id={ id } liked={ liked } />
             

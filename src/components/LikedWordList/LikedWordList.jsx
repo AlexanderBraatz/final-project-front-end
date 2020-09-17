@@ -4,7 +4,7 @@ import Heart from "../Heart";
 
 
 
-const LikedWordList =( likedWordList ) => {
+const LikedWordList =( {likedWordList} ) => {
 
 // like WordList but with deffinitions with Heart beeing used
   return(
@@ -25,7 +25,7 @@ const LikedWordList =( likedWordList ) => {
       
                   <p className='intro'>{ term.description }</p>
       
-                  <Heart id={ term.id } like={ term.liked} />
+                  <Heart id={ term.id } liked={ term.liked} />
               </div> 
           ))}
         </ul>

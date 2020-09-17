@@ -1,11 +1,13 @@
 import React  from 'react';
 
 
-const WordLinks = ({  links }) => (
+const WordLinks = ({ links }) => (
     
     <span >
         {links.map(link => (
-            <a href="/" key={ link.id } >{ link }</a>
+            <a 
+            key={ link.id } 
+            href={ link.link }>{ link.link }</a>
         ))}
     </span>
 );

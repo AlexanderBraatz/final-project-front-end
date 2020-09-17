@@ -26,10 +26,9 @@ export const resetLoading = (stateKey) => {
     }
 };
 
-export const updateLike = (id, isItLiked) => {
+export const updateLike = (term) => {
     return {
         type: "UPDATE_LIKE",
-        id,
-        isItLiked,
+        term,
     }
 };
