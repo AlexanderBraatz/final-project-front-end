@@ -60,8 +60,7 @@ export const sendSearch = (value) => {
 export const changeLike = (id, liked ) => {
     const isItLiked = !liked;
     return (dispatch) => {
-        dispatch(updateLike(id, isItLiked));
-        axios.patch(`/words/${id}`,{ "liked": isItLiked });
+        axios.patch(`/words/${id}`,{ "liked": isItLiked }).then(({data}) => dispatch(updateLike(data.data)));
     };
 };
 

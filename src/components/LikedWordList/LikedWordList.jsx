@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Heart from "../Heart";
 
 
 
-const LikedWordList =( likedWordList ) => {
+const LikedWordList =( {likedWordList} ) => {
 
 // like WordList but with deffinitions with Heart beeing used
   return(
@@ -16,7 +16,7 @@ const LikedWordList =( likedWordList ) => {
           { likedWordList.map( term => (
               <div className="card list-items " >
                   <Link 
-                  to={ '/words/${ term.id }' } 
+                  to={ `/words/${ term.id }` } 
                   key={ term.id } 
                   className="list-items-nav"  
                   >
@@ -25,7 +25,7 @@ const LikedWordList =( likedWordList ) => {
       
                   <p className='intro'>{ term.description }</p>
       
-                  <Heart id={ term.id } like={ term.liked} />
+                  <Heart id={ term.id } liked={ term.liked} />
               </div> 
           ))}
         </ul>
