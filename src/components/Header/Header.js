@@ -7,7 +7,7 @@ class Header extends Component {
   render() {
     const { children } = this.props;
     // console.log(this.props.location);
-    if (this.props.location.pathname === '/final-project-front-end#') return null;
+    if (this.props.location.pathname === '/final-project-front-end/#') return null;
 
     return (
 

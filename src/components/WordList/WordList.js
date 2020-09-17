@@ -10,9 +10,9 @@ const WordList = ({ wordList }) => {
         <ul className="list">
             { wordList.map( term => (
                 
-                <div className="card list-items "  >
+                <div className="card list-items " key={ term.id }  >
                     <Link 
-                    to={ `/words/${ term.id }` } key={ term.id } className="list-items-nav">
+                    to={ `/words/${ term.id }` } className="list-items-nav">
                         { term.word}
                     </Link>
                     <Heart id={ term.id } liked={ term.liked } />
