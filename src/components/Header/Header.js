@@ -12,7 +12,7 @@ class Header extends Component {
     return (
 
       <>
-        <div className="container">
+        {/* <div className="container"> */}
           <header className="header glitch">
 
             {/* <h1 className="header-title" data-text={children}>{children}</h1> */}
@@ -22,7 +22,7 @@ class Header extends Component {
             <Nav />
 
           </header>
-        </div>
+        {/* </div> */}
       </>
     );
   };
