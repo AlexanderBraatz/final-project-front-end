@@ -23,7 +23,7 @@ const Liked =( likedWordList ) => {
                       { term.word}
                   </Link>
       
-                  <p className='intro'>{ term.description }</p>
+                  <p className='intro'>{ term.definition }</p>
       
                   <Heart id={ term.id } like={ term.liked} />
               </div> 
