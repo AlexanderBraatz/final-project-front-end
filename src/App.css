@@ -16,9 +16,14 @@
 
 @import "./styles/_search.css";
 
+
 body{
  
- 
+  height: 100%;
+  overflow: auto;
+  background: lightgray;
+  
+  
 
   /* darker background */
 
@@ -26,7 +31,9 @@ body{
 
   /* lighter background */
 
-  background-image: linear-gradient(to bottom , rgb(160, 155, 155),rgb(228, 224, 224),rgb(170, 170, 169),rgb(134, 134, 133), rgb(78, 78, 76) ,rgb(7, 7, 6));
+  background-image: linear-gradient(to bottom , rgb(168, 168, 168) ,rgb(228, 224, 224),rgb(170, 170, 169),rgb(134, 134, 133), rgb(78, 78, 76) ,rgb(168, 168, 168));
 
-  
+  /* rgb(160, 155, 155) */
 }
+
+/* rgb(167, 163, 163) */

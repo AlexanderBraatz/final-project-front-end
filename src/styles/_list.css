@@ -24,14 +24,21 @@
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
+    
     -webkit-text-stroke: 0.7px rgb(226, 222, 222);
-    /* text-align: center ; */
-    
-    
     padding: 1rem 0;
     
-
 }
+
+
+
+.list-items-nav:hover{
+    color: rgb(243, 162, 12);
+    -webkit-text-stroke: 0.7px rgb(179, 119, 8);
+    font-size: 1.2rem;
+    
+}
+
 
 
 .card{
@@ -40,17 +47,17 @@
     transition: 0.3s;
     text-align: center;
     
-
     background-image:
     linear-gradient(to bottom, rgba(7, 7, 7, 0.52), rgba(7, 7, 7, 0.52), rgba(51, 50, 51, 0.918), rgba(90, 86, 86, 0.918),rgba(139, 137, 139, 0.918)),
     url('./assets/Programming.jpg');
     background-size: 12rem;
     
-    
-    border: 1px ridge rgb(3, 3, 3);
+    border: 1px ridge rgb(99, 28, 146);
     border-radius: 10%;
     min-height: 10rem;
     height: auto;
+    
+    width: auto;
     width: 10rem;
     padding: 0rem 3rem;
     margin: 2rem 0.8rem;
@@ -62,13 +69,15 @@
 
     box-shadow: -5px -5px 3px 3px rgba(100, 64, 78, 0.87);
     border: 2px ridge rgb(242, 247, 244);
-    background-image: linear-gradient(to bottom, rgb(110, 107, 107), rgb(245, 243, 243)); 
+    background-image: linear-gradient(to bottom, rgb(34, 32, 32), rgb(245, 243, 243)); 
 
 }
     
 .card-container {
     border-top: 0.1rem solid rgb(238, 236, 233);
-    height: 0.7rem;
+    min-height: 0.7rem;
+    height: auto;
+    width: auto;
     display: flex;
     justify-content: center;  
 }
