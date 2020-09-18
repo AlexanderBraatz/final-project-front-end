@@ -13,9 +13,11 @@ class Loading extends Component {
 
         return loaded ? children : (
             <>
+            <body className="body">
             <div className="progress-border">
                 <div className="progress">Loading....</div>
             </div>
+            </body>
             </>
         );
     }
