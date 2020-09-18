@@ -54,9 +54,9 @@ export const sendSearch = (value) => {
 
     return (dispatch) => {
         axios.get(`/search?query=${value}`).then(({ data }) => {
-            if(data.data[0]){
-                dispatch(setWordCard(data.data[0]));
-                history.push(`/words/${data.data[0].id}`)
+            if(data.data){
+                dispatch(setWordCard(data.data));
+                history.push(`/words/${data.data.id}`)
             }
         });
     };
