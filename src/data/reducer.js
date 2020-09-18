@@ -44,13 +44,23 @@ const resetLoadingReducer = (state, {stateKey}) => {
 }
 
 const updateLikeReducer =(state, { term }) => {
-   const { id , liked} = term;
+  const { id , liked} = term;
   const {wordCard, wordList, likedWordList} = state;
 
-  const updatedWL =  wordList.map((term)=>((term.id === id) ? {...term, liked, } : term));
-  const updatedLWL =  likedWordList.map((term)=>((term.id === id) ? {...term, liked, } : term));
+  console.log(term );
 
-  const updatedWC = (wordCard.id === id) ? {...wordCard, liked,} : wordCard
+  const updatedWL =  wordList.map((term)=>((term.id === id) ? {...term, liked, } : term));
+
+  let updatedLWL;
+  if(!liked){
+    updatedLWL = likedWordList.filter((likedWord) => likedWord.id !== term.id )
+  }else{updatedLWL = [...likedWordList,term]}
+  
+
+  const updatedWC = (wordCard.id === id) ? {...wordCard, liked,} : wordCard;
+  
+  console.log(id, wordList.liked,liked);
+
   return({
     ...state,
     wordList : updatedWL,
