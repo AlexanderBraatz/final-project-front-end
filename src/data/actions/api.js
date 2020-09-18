@@ -13,33 +13,36 @@ import history from "../../history";
 
 
 export const getWordCard = (id) => {
-    resetLoading("wordCard");
+
     return (dispatch) => {
         //dispatch(setWordCard(testWordCard()));// <--only for testing befor the API is deployed
         axios.get(`/words/${id}`).then(({ data }) => {
             dispatch(setWordCard(data.data));
+            resetLoading("wordCard");
         });
     };
 };
 
 
 export const getWordList = () => {
-    resetLoading("wordList");
+
     return (dispatch) => {
        // dispatch(setWordList(testWordList()));// <--only for testing befor the API is deployed
         axios.get("/words").then(({ data }) => {
             dispatch(setWordList(data.data));
+            resetLoading("wordList");
         });
     };
 };
 
 
 export const getLikedWordList = () => {
-    resetLoading("likedWordList");
+   
     return (dispatch) => {
        // dispatch(setLikedWordList(testLikedWordList()));// <--only for testing befor the API is deployed
         axios.get("/words/liked").then(({ data }) => {
             dispatch(setLikedWordList(data.data));
+            resetLoading("likedWordList");
         });
     };
 };
