@@ -20,7 +20,7 @@ import Intro from "../../components/Intro";
 import FourOhFour from "../../components/FourOhFour";
 import Footer from "../../components/Footer";
 
-// import Form from "../../components/Form";
+import Form from "../../components/Form";
 
 import '../../App.css';
 
@@ -35,9 +35,10 @@ const App = (props) => (
              <Home />
             </Route>
 
-            {/* <Route exact path="/form">
+            <Route exact path="/form">
+              <Header> NERD WORDS </Header>
              <Form />
-            </Route> */}
+            </Route>
 
             <Route exact path="/words/:id"
               render={ ( { match }) => (
