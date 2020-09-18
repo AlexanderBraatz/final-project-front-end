@@ -5,6 +5,7 @@ const reducer = (state, action) => {
     case "SET_LWL" : return setLWLReducer(state,action)
     case "RESET_LOADING" : return resetLoadingReducer(state, action)
     case "UPDATE_LIKE" : return updateLikeReducer(state, action);
+    case "SET_USERNAME" : return updateLogInReducer(state, action);
     default: return state;
   }
 }
@@ -67,5 +68,13 @@ const updateLikeReducer =(state, { term }) => {
     likedWordList : updatedLWL,
     wordCard : updatedWC,
   })
-}
+};
+
+
+const updateLogInReducer = (state, { userName }) =>{
+  return({
+    ...state,
+    userName,
+  })
+};
 export default reducer ;

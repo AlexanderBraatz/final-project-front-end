@@ -4,6 +4,7 @@ import { setLikedWordList } from "./state";
 import { setWordCard } from "./state";
 import { updateLike } from "./state";
 import { resetLoading } from "./state";
+import { setUsetName } from "./state";
 import history from "../../history";
 
 
@@ -66,6 +67,20 @@ export const changeLike = (id, liked ) => {
     const isItLiked = !liked;
     return (dispatch) => {
         axios.patch(`/words/${id}`,{ "liked": isItLiked }).then(({data}) => dispatch(updateLike(data.data)));
+    };
+};
+
+
+export const sendSU = (infoSU) => {
+    return (dispatch) => {
+        axios.post(`/user-signup`,{ ...infoSU}).then(({data}) => dispatch(setUsetName(infoSU.name)));
+    };
+};
+
+
+export const sendLI = (infoLI) => {
+    return (dispatch) => {
+        axios.post(`/user-login`,{ ...infoLI}).then(({data}) => dispatch(setUsetName(infoLI.name)));
     };
 };
 

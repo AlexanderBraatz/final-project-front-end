@@ -53,6 +53,7 @@ const initial = {
   loadedWordCard: false,
   loadedWordList: false,
   loadedLikedWordList: false,
+  userName: "",
 };
 
 export default initial;

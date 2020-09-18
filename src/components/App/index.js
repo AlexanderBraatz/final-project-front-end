@@ -3,7 +3,6 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 
 import LikedWordList from "../LikedWordList";
-// import SearchBar from "../SearchBar";
 import WordCard from "../WordCard";
 import WordList from "../WordList";
 import LoadingWC from "../Loading/LoadingWC";
@@ -21,6 +20,8 @@ import FourOhFour from "../../components/FourOhFour";
 import Footer from "../../components/Footer";
 
 // import Form from "../../components/Form";
+import FormSU from "../../components/FormSU";
+import FormLI from "../../components/FormLI";
 
 import '../../App.css';
 
@@ -38,6 +39,14 @@ const App = (props) => (
             {/* <Route exact path="/form">
              <Form />
             </Route> */}
+
+            <Route exact path="/form-su">
+             <FormSU />
+            </Route>
+            <Route exact path="/form-li">
+             <FormLI />
+            </Route>
+
 
             <Route exact path="/words/:id"
               render={ ( { match }) => (

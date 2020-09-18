@@ -32,3 +32,10 @@ export const updateLike = (term) => {
         term,
     }
 };
+export const setUsetName = (userName) => {
+    return {
+        type: "SET_USERNAME",
+        userName,
+    }
+};
+
