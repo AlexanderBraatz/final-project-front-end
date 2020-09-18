@@ -14,7 +14,7 @@ const Search = ({ find}) => {
 
 
   
-    if (window.location.pathname === '/') return null;
+   
     
     return(
     <form className="search" onSubmit={handleSubmit} >

@@ -4,6 +4,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; 
+   
     
     height: 12rem;
     margin-bottom: 2rem;
@@ -20,6 +21,7 @@ header{
 .header-title{
     display: flex;
     justify-content: left;
+    
     
     height: 4rem;
     font-size: 5rem;
