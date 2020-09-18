@@ -1,7 +1,7 @@
 import React  from 'react';
 
 
-const WordLinks = ({ links }) => (
+const WordLinks = ({ links =[] }) => (
     
     <span >
         {links.map(link => (
